@@ -88,10 +88,17 @@ header .heading .name hr    {
 }
 
 header .heading .name button    {
-    font-size: 2rem;
-    padding: 5px;
+    font-size: 2,2rem;
+    padding: 10px;
     background-color: white;
     font-weight: 500;
+}
+
+header .heading .name button:hover    {
+    font-size: 2rem;
+    padding: 5px;
+    background-color: #f0f0f0;
+    text-decoration: underline;
 }
 
 /*ABOUT SECTION*/
