@@ -9,6 +9,10 @@ html    {
     max-width: 100%;
 }
 
+body    {
+    background-color: #f0f0f0;
+}
+
 h1,
 h2,
 button  {
@@ -48,7 +52,7 @@ header  {
 }
 
 header nav  {
-    background-color: rgb(255, 255, 255);
+    background-color: #6d5d46;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -61,9 +65,9 @@ header nav  {
 }
 
 header nav a    {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 800;
     max-width: 100%;
     text-align: center;
@@ -85,7 +89,7 @@ header .heading .name   {
 }
 
 header .heading .name h1    {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 header .heading .name h2   {
@@ -101,9 +105,10 @@ header .heading .name hr    {
 header .heading .name button    {
     font-size: 2.2rem;
     padding: 10px;
-    background-color: rgb(40,40,40);
+    background-color: #476053;
     font-weight: 500;
     color: white;
+    border-radius: 5px;
 }
 
 header .heading .name button:hover    {
@@ -121,12 +126,13 @@ header .heading .name button:hover    {
 
 #about .about-img   {
     width: 50%;
-    margin: 0 auto;
+    margin: 20px auto 10px;
 }
 
 #about .about-img img   {
     max-width: 100%;
-    padding: 10px 0;
+    border: 1px solid #476053;
+    border-radius: 5px;
 }
 
 #about .about-text  {
@@ -135,7 +141,10 @@ header .heading .name button:hover    {
     margin: auto;
     padding: 10px;
     font-size: 1.6rem;
-    background-color: #f0f0f0;
+    background-color: #6d5d46;
+    color: white;
+    border: 1px solid #476053;
+    border-radius: 5px;
 }
 
 /*SKILLS SECTION*/
@@ -159,7 +168,10 @@ header .heading .name button:hover    {
     margin: 20px;
     padding: 10px;
     font-size: 2em;
-    background-color: #f3f3f3;
+    background-color: #6d5d46;
+    color: white;
+    border: 1px solid #476053;
+    border-radius: 5px;
 }
 
 #skills .skills-container .skill h2 {
@@ -193,12 +205,15 @@ header .heading .name button:hover    {
     margin: 20px;
     padding: 10px;
     font-size: 2em;
-    background-color: #f3f3f3;
+    background-color: #6d5d46;
+    color: white;
+    border: 1px solid #476053;
+    border-radius: 5px;
 }
 
 #portfolio .port-container .port-item .port-head h2 {
     padding: 10px;
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 #portfolio .port-container .port-item .port-head i {
@@ -210,8 +225,9 @@ header .heading .name button:hover    {
     padding: 10px;
     margin: 20px;
     font-size: 1.6rem;
-    background-color: rgb(40,40,40);
+    background-color: #476053;
     color: white;
+    border-radius: 5px;
 }
 
 #portfolio .port-container .port-item .port-body a button:hover {
@@ -222,15 +238,16 @@ header .heading .name button:hover    {
 footer  {
     height: 56px;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #6d5d46;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-top: 1px solid #476053;
 }
 
 footer a    {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 1.2em;
 }
