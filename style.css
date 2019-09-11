@@ -135,6 +135,7 @@ header .heading .name button:hover    {
     margin: auto;
     padding: 10px;
     font-size: 1.6rem;
+    background-color: #f0f0f0;
 }
 
 /*SKILLS SECTION*/
