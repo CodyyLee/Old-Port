@@ -1,1 +1,22 @@
+//display flex mixin
+.display-flex(@justify, @align, @dir)   {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @dir;
+}
 
+//button styles
+.main-btn() {
+    padding: 10px;
+    background-color: @main-color;
+    color: white;
+    margin: 10px;
+    border-radius: 3px;
+    font-weight: 600;
+
+    &:hover {
+        background-color: @secondary-color;
+        color: black;
+    }
+}

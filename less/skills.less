@@ -1,1 +1,38 @@
+//skills section
+#skills {
 
+    .skills-container {
+        .display-flex(center, center, column);
+        width: 78%;
+        padding: @main-padding;
+        margin: auto;
+
+        .skill {
+            background-color: @secondary-color;
+            width: 200px;
+            height: 200px;
+            margin: 10px 0;
+            border-radius: 3px;
+            
+            .skill-head {
+                .display-flex(center, center, column);
+                height: 100%;                
+                
+                i {
+                    font-size: 8rem;
+                }//end of i tag
+
+                h2 {
+                    font-size: 3rem;
+                }//end of h2 tag
+            }//end of skill-head class
+        }//end of skill class
+    }//end of skills-container class
+}//end of skills id
+
+.divider1 {
+    width: 100%;
+    height: 150px;
+    background-image: url("../images/divider1.jpg");
+    background-attachment: fixed;
+}

@@ -1,1 +1,35 @@
+//about section css
+#about {
+    .display-flex(center, center, column);
+    padding: 66px 0;
 
+    .about-img {
+        width: 80%;
+        
+        img {
+            max-width: 100%;
+            border-radius: 3px;
+        }//end of image tag
+    }//end of about-img class
+
+    .about-text {
+        width: 78%;
+        margin-top: 10px;
+        background-color: @secondary-color;
+        border-radius: 3px;
+        padding: 2%;
+
+        p {
+            font-size: 1.6rem;
+            text-align: center;
+        }
+    }
+}//end of about id
+
+.divider {
+    height: 150px;
+    width: 100%;
+    background-image: url("../images/divider.jpg");
+    background-position: left;
+    background-attachment: fixed;
+}

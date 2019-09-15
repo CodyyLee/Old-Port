@@ -1,0 +1,297 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  font-size: 62.5%;
+}
+#home {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/landing.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
+}
+#home nav {
+  width: 100%;
+  background-color: black;
+  height: 56px;
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  z-index: 2;
+}
+#home nav a {
+  color: lightgrey;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+#home nav a:hover {
+  color: white;
+}
+#home .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+#home .heading .name {
+  text-align: center;
+}
+#home .heading .name h1 {
+  font-size: 2.5rem;
+}
+#home .heading .name h2 {
+  font-size: 1.6rem;
+}
+#home .heading .name a .learn-btn {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  margin: 10px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+#home .heading .name a .learn-btn:hover {
+  background-color: lightgrey;
+  color: black;
+}
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 66px 0;
+}
+#about .about-img {
+  width: 80%;
+}
+#about .about-img img {
+  max-width: 100%;
+  border-radius: 3px;
+}
+#about .about-text {
+  width: 78%;
+  margin-top: 10px;
+  background-color: lightgrey;
+  border-radius: 3px;
+  padding: 2%;
+}
+#about .about-text p {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.divider {
+  height: 150px;
+  width: 100%;
+  background-image: url("../images/divider.jpg");
+  background-position: left;
+  background-attachment: fixed;
+}
+#skills .skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 78%;
+  padding: 66px 0;
+  margin: auto;
+}
+#skills .skills-container .skill {
+  background-color: lightgrey;
+  width: 200px;
+  height: 200px;
+  margin: 10px 0;
+  border-radius: 3px;
+}
+#skills .skills-container .skill .skill-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+#skills .skills-container .skill .skill-head i {
+  font-size: 8rem;
+}
+#skills .skills-container .skill .skill-head h2 {
+  font-size: 3rem;
+}
+.divider1 {
+  width: 100%;
+  height: 150px;
+  background-image: url("../images/divider1.jpg");
+  background-attachment: fixed;
+}
+#portfolio {
+  padding: 66px 0;
+}
+#portfolio .port-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#portfolio .port-container .port-item {
+  background-color: lightgrey;
+  width: 78%;
+  padding: 2%;
+  margin: 10px;
+}
+#portfolio .port-container .port-item .port-head {
+  text-align: center;
+}
+#portfolio .port-container .port-item .port-head i {
+  font-size: 4rem;
+}
+#portfolio .port-container .port-item .port-head h2 {
+  font-size: 2rem;
+}
+#portfolio .port-container .port-item .port-body {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+#portfolio .port-container .port-item .port-body p {
+  font-size: 1.6rem;
+}
+#portfolio .port-container .port-item .port-body a button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  margin: 10px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+#portfolio .port-container .port-item .port-body a button:hover {
+  background-color: lightgrey;
+  color: black;
+}

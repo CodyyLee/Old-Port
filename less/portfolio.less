@@ -1,1 +1,44 @@
+//portfolio section
+#portfolio {
+    padding: @main-padding;
 
+    .port-container {
+        .display-flex(center, center, column);
+
+        .port-item {
+            background-color: @secondary-color;
+            width: 78%;
+            padding: 2%;
+            margin: 10px;
+
+            .port-head {
+                text-align: center;
+
+                i {
+                    font-size: 4rem;
+                }//end of i tag
+    
+                h2 {
+                    font-size: 2rem;
+                }//end of h2 tag
+            }//end of port-head class
+
+            .port-body {
+                width: 90%;
+                margin: auto;
+                text-align: center;
+
+                p {
+                    font-size: 1.6rem;
+                }
+
+                a {
+
+                    button {
+                        .main-btn();
+                    }
+                }
+            }//end of port-body class
+        }//end of port-item class
+    }//end of port-container class
+}//end of portfolio id
