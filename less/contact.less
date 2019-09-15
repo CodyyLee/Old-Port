@@ -1,0 +1,36 @@
+//styles for contact section
+#contact {
+    padding: @main-padding;
+
+    .contact-container {
+        width: 78%;
+        padding: 2%;
+        margin: auto;
+
+        form {
+            width: 97%;
+            padding: 3%;
+            background-color: @secondary-color;
+            .display-flex(center, center, column);
+            border-radius: 3px;
+
+            label {
+                margin: 10px;
+                font-size: 1.8rem;
+            }//end of label tag
+
+            input {
+                width: 80%;
+            }
+
+            textarea {
+                width: 80%;
+            }
+
+            .submit {
+                .main-btn();
+                width: 70%;
+            }
+        }//end of form tag
+    }//end of contact-container
+}//end of contact id

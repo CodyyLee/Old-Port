@@ -1,29 +1,62 @@
 //about section css
 #about {
-    .display-flex(center, center, column);
     padding: 66px 0;
 
-    .about-img {
-        width: 80%;
-        
-        img {
-            max-width: 100%;
-            border-radius: 3px;
-        }//end of image tag
-    }//end of about-img class
-
-    .about-text {
-        width: 78%;
-        margin-top: 10px;
-        background-color: @secondary-color;
-        border-radius: 3px;
-        padding: 2%;
-
-        p {
-            font-size: 1.6rem;
-            text-align: center;
-        }
+    @media @tablet {
+        flex-direction: row;
+        justify-content: space-around;
     }
+
+    h2 {
+        font-size: 3.5rem;
+        width: 100%;
+        text-align: center;
+        margin: 5px;
+    }
+
+    hr {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .about-container {
+        .display-flex(center, center, column);
+
+        .about-img {
+            width: 80%;
+    
+            @media @tablet {
+                width: 45%;
+            }
+            
+            img {
+                max-width: 100%;
+                border-radius: 3px;
+    
+            }//end of image tag
+        }//end of about-img class
+    
+        .about-text {
+            width: 78%;
+            margin-top: 10px;
+            background-color: @secondary-color;
+            border-radius: 3px;
+            padding: 2%;
+    
+            @media @tablet {
+                width: 45%;
+            }//end of about-text media query
+    
+            p {
+                font-size: 1.6rem;
+                text-align: center;
+    
+                @media @tablet {
+                    font-size: 2.5rem;
+                }//end of p tag media query
+            }//end of p tag
+        }//end of about-text class
+    }//end of about-container class
 }//end of about id
 
 .divider {
@@ -32,4 +65,10 @@
     background-image: url("../images/divider.jpg");
     background-position: left;
     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media @tablet {
+        height: 300px;
+    }
 }

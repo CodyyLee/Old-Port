@@ -7,12 +7,21 @@
         padding: @main-padding;
         margin: auto;
 
+        @media @tablet {
+            .display-flex(space-evenly, space-evenly, row);
+            flex-wrap: wrap;
+        }
+
         .skill {
             background-color: @secondary-color;
             width: 200px;
             height: 200px;
             margin: 10px 0;
             border-radius: 3px;
+
+            @media @tablet {
+                
+            }
             
             .skill-head {
                 .display-flex(center, center, column);

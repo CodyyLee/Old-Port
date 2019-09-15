@@ -23,6 +23,7 @@
             <a href="#about">ABOUT</a>
             <a href="#skills">SKILLS</a>
             <a href="#portfolio">PORTFOLIO</a>
+            <a href="#contact">CONTACT</a>
         </nav>
 
         <div class="heading">
@@ -36,15 +37,21 @@
     </header>
 
     <section id="about">
-        <div class="about-img">
-            <img src="images/about-img.jpeg" alt="Photo of Cody Garrett">
-        </div> <!--about-img-->
+        <hr>
+        <h2>About</h2>
+        <hr>
 
-        <div class="about-text">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque magnam quae repudiandae nisi numquam, veritatis omnis, ipsa aspernatur unde repellat eveniet debitis voluptate doloremque pariatur laborum dolore accusamus quaerat. Fuga.</p>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nihil laborum quod qui delectus debitis aspernatur, ad, aliquam nam maiores excepturi architecto eligendi, perspiciatis eos voluptatibus. Rem deleniti nam eveniet?</p>
-        </div> <!--about-text-->
+        <div class="about-container">
+            <div class="about-img">
+                <img src="images/about-img.jpeg" alt="Photo of Cody Garrett">
+            </div> <!--about-img-->
+    
+            <div class="about-text">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque magnam quae repudiandae nisi numquam, veritatis omnis, ipsa aspernatur unde repellat eveniet debitis voluptate doloremque pariatur laborum dolore accusamus quaerat. Fuga.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nihil laborum quod qui delectus debitis aspernatur, ad, aliquam nam maiores excepturi architecto eligendi, perspiciatis eos voluptatibus. Rem deleniti nam eveniet?</p>
+            </div> <!--about-text-->
+        </div> <!--about-container-->
     </section> <!--about-->
 
     <div class="divider"></div> <!--divider-->
@@ -125,11 +132,21 @@
         </div> <!--port-container-->
     </section> <!--portfolio-->
 
+    <div class="divider2"></div>
+
     <section id="contact">
         <div class="contact-container">
             <form action="">
                 <label for="name">Name</label>
                 <input type="text" required  id="name" placeholder="John Doe">
+
+                <label for="email">Email</label>
+                <input type="text" id='email' required placeholder="email@example.com">
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" required rows="5" placeholder="Enter your message"></textarea>
+
+                <button class="submit" type="submit">Send</button>
             </form>
         </div> <!--contact-container-->
     </section> <!--contact-->

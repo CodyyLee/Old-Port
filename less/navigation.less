@@ -17,7 +17,11 @@
         a {
             color: @secondary-color;
             text-decoration: none;
-            font-size: 1.6rem;
+            font-size: 1.3rem;
+
+            @media @tablet {
+                font-size: 2rem;
+            }
 
             &:hover {
                 color: white;
@@ -34,16 +38,28 @@
 
             h1 {
                 font-size: 2.5rem;
+
+                @media @tablet {
+                    font-size: 6rem;
+                }
             }//end of h1 tag
 
             h2 {
                 font-size: 1.6rem;
+
+                @media @tablet {
+                    font-size: 3rem;
+                }
             }//end of h2 tag
 
             a {
                 
                 .learn-btn {
                     .main-btn();
+
+                    @media @tablet {
+                        font-size: 3rem;
+                    }
                 }//end of learn-btn class
             }//end of a tag
         }//end of name class
