@@ -2,24 +2,53 @@
 #portfolio {
     padding: @main-padding;
 
+    h2 {
+        .section-head();
+    }
+
+    hr {
+        .hr();
+    }
+
     .port-container {
         .display-flex(center, center, column);
+
+        @media @tablet {
+            .display-flex(space-evenly, space-evenly, row);
+            flex-wrap: wrap;
+        }
 
         .port-item {
             background-color: @secondary-color;
             width: 78%;
             padding: 2%;
-            margin: 10px;
+            margin: 10px auto;
+
+            @media @tablet {
+                width: 40%;
+            }
+
+            @media @desktop {
+                width: 30%;
+            }
 
             .port-head {
                 text-align: center;
 
                 i {
                     font-size: 4rem;
+
+                    @media @tablet {
+                        font-size: 6rem;
+                    }
                 }//end of i tag
     
                 h2 {
                     font-size: 2rem;
+
+                    @media @tablet {
+                        font-size: 3rem;
+                    }
                 }//end of h2 tag
             }//end of port-head class
 
@@ -30,12 +59,20 @@
 
                 p {
                     font-size: 1.6rem;
+
+                    @media @tablet {
+                        font-size: 2.3rem;
+                    }
                 }//end of p tag
 
                 a {
 
                     button {
                         .main-btn();
+
+                        @media @tablet {
+                            font-size: 2.5rem;
+                        }
                     }
                 }
             }//end of port-body class
@@ -49,4 +86,10 @@
     height: 150px;
     width: 100%;
     background-position: right;
-}
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media @tablet {
+        height: 300px;
+    }//end of divider2 class media query
+}//end of divider2 class

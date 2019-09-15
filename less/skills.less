@@ -1,10 +1,18 @@
 //skills section
 #skills {
+    padding: @main-padding;
+
+    h2 {
+        .section-head();
+    }
+
+    hr {
+        .hr();
+    }
 
     .skills-container {
         .display-flex(center, center, column);
         width: 78%;
-        padding: @main-padding;
         margin: auto;
 
         @media @tablet {
@@ -20,7 +28,8 @@
             border-radius: 3px;
 
             @media @tablet {
-                
+                width: 250px;
+                height: 250px;
             }
             
             .skill-head {
@@ -44,4 +53,10 @@
     height: 150px;
     background-image: url("../images/divider1.jpg");
     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media @tablet {
+        height: 300px;
+    }
 }

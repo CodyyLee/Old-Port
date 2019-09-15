@@ -136,6 +136,8 @@ html {
   background-position: center;
   background-attachment: fixed;
   z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #home nav {
   width: 100%;
@@ -196,7 +198,7 @@ html {
   font-weight: 600;
 }
 #home .heading .name a .learn-btn:hover {
-  background-color: lightgrey;
+  background-color: white;
   color: black;
 }
 @media (min-width: 767px) {
@@ -207,17 +209,12 @@ html {
 #about {
   padding: 66px 0;
 }
-@media (min-width: 767px) {
-  #about {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
 #about h2 {
   font-size: 3.5rem;
   width: 100%;
   text-align: center;
-  margin: 5px;
+  margin: 5px auto;
+  font-weight: 600;
 }
 #about hr {
   width: 80%;
@@ -228,13 +225,26 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+}
+@media (min-width: 767px) {
+  #about .about-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 #about .about-container .about-img {
   width: 80%;
+  margin-top: 10px;
 }
 @media (min-width: 767px) {
   #about .about-container .about-img {
     width: 45%;
+  }
+}
+@media (min-width: 1100px) {
+  #about .about-container .about-img {
+    width: 20%;
   }
 }
 #about .about-container .about-img img {
@@ -276,13 +286,26 @@ html {
     height: 300px;
   }
 }
+#skills {
+  padding: 66px 0;
+}
+#skills h2 {
+  font-size: 3.5rem;
+  width: 100%;
+  text-align: center;
+  margin: 5px auto;
+  font-weight: 600;
+}
+#skills hr {
+  width: 80%;
+  margin: 10px auto;
+}
 #skills .skills-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 78%;
-  padding: 66px 0;
   margin: auto;
 }
 @media (min-width: 767px) {
@@ -300,6 +323,12 @@ html {
   height: 200px;
   margin: 10px 0;
   border-radius: 3px;
+}
+@media (min-width: 767px) {
+  #skills .skills-container .skill {
+    width: 250px;
+    height: 250px;
+  }
 }
 #skills .skills-container .skill .skill-head {
   display: flex;
@@ -319,9 +348,27 @@ html {
   height: 150px;
   background-image: url("../images/divider1.jpg");
   background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 767px) {
+  .divider1 {
+    height: 300px;
+  }
 }
 #portfolio {
   padding: 66px 0;
+}
+#portfolio h2 {
+  font-size: 3.5rem;
+  width: 100%;
+  text-align: center;
+  margin: 5px auto;
+  font-weight: 600;
+}
+#portfolio hr {
+  width: 80%;
+  margin: 10px auto;
 }
 #portfolio .port-container {
   display: flex;
@@ -329,11 +376,30 @@ html {
   align-items: center;
   flex-direction: column;
 }
+@media (min-width: 767px) {
+  #portfolio .port-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 #portfolio .port-container .port-item {
   background-color: lightgrey;
   width: 78%;
   padding: 2%;
-  margin: 10px;
+  margin: 10px auto;
+}
+@media (min-width: 767px) {
+  #portfolio .port-container .port-item {
+    width: 40%;
+  }
+}
+@media (min-width: 1100px) {
+  #portfolio .port-container .port-item {
+    width: 30%;
+  }
 }
 #portfolio .port-container .port-item .port-head {
   text-align: center;
@@ -341,8 +407,18 @@ html {
 #portfolio .port-container .port-item .port-head i {
   font-size: 4rem;
 }
+@media (min-width: 767px) {
+  #portfolio .port-container .port-item .port-head i {
+    font-size: 6rem;
+  }
+}
 #portfolio .port-container .port-item .port-head h2 {
   font-size: 2rem;
+}
+@media (min-width: 767px) {
+  #portfolio .port-container .port-item .port-head h2 {
+    font-size: 3rem;
+  }
 }
 #portfolio .port-container .port-item .port-body {
   width: 90%;
@@ -351,6 +427,11 @@ html {
 }
 #portfolio .port-container .port-item .port-body p {
   font-size: 1.6rem;
+}
+@media (min-width: 767px) {
+  #portfolio .port-container .port-item .port-body p {
+    font-size: 2.3rem;
+  }
 }
 #portfolio .port-container .port-item .port-body a button {
   padding: 10px;
@@ -361,8 +442,13 @@ html {
   font-weight: 600;
 }
 #portfolio .port-container .port-item .port-body a button:hover {
-  background-color: lightgrey;
+  background-color: white;
   color: black;
+}
+@media (min-width: 767px) {
+  #portfolio .port-container .port-item .port-body a button {
+    font-size: 2.5rem;
+  }
 }
 .divider2 {
   background-image: url("../images/divider2.jpg");
@@ -370,9 +456,27 @@ html {
   height: 150px;
   width: 100%;
   background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 767px) {
+  .divider2 {
+    height: 300px;
+  }
 }
 #contact {
   padding: 66px 0;
+}
+#contact h2 {
+  font-size: 3.5rem;
+  width: 100%;
+  text-align: center;
+  margin: 5px auto;
+  font-weight: 600;
+}
+#contact hr {
+  width: 80%;
+  margin: 10px auto;
 }
 #contact .contact-container {
   width: 78%;
@@ -388,16 +492,37 @@ html {
   align-items: center;
   flex-direction: column;
   border-radius: 3px;
+  margin: auto;
+}
+@media (min-width: 1100px) {
+  #contact .contact-container form {
+    width: 60%;
+  }
 }
 #contact .contact-container form label {
   margin: 10px;
   font-size: 1.8rem;
 }
+@media (min-width: 767px) {
+  #contact .contact-container form label {
+    font-size: 3.3rem;
+  }
+}
 #contact .contact-container form input {
   width: 80%;
 }
+@media (min-width: 767px) {
+  #contact .contact-container form input {
+    font-size: 3rem;
+  }
+}
 #contact .contact-container form textarea {
   width: 80%;
+}
+@media (min-width: 767px) {
+  #contact .contact-container form textarea {
+    font-size: 3rem;
+  }
 }
 #contact .contact-container form .submit {
   padding: 10px;
@@ -409,8 +534,14 @@ html {
   width: 70%;
 }
 #contact .contact-container form .submit:hover {
-  background-color: lightgrey;
+  background-color: white;
   color: black;
+}
+@media (min-width: 767px) {
+  #contact .contact-container form .submit {
+    font-size: 2.5rem;
+    width: 50%;
+  }
 }
 footer {
   width: 100%;
@@ -423,4 +554,9 @@ footer {
 }
 footer .muted {
   color: lightgrey;
+}
+@media (min-width: 767px) {
+  footer .muted {
+    font-size: 1.8rem;
+  }
 }

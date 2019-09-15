@@ -2,31 +2,33 @@
 #about {
     padding: 66px 0;
 
-    @media @tablet {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
     h2 {
-        font-size: 3.5rem;
-        width: 100%;
-        text-align: center;
-        margin: 5px;
+        .section-head();
     }
 
     hr {
-        width: 80%;
-        margin: 10px auto;
+        .hr();
     }
 
     .about-container {
         .display-flex(center, center, column);
+        width: 100%;
+
+        @media @tablet {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
 
         .about-img {
             width: 80%;
+            margin-top: 10px;
     
             @media @tablet {
                 width: 45%;
+            }
+
+            @media @desktop {
+                width: 20%;
             }
             
             img {
